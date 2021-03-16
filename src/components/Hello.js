@@ -1,8 +1,11 @@
 import React from 'react'
 
-function Hello() {
+function Hello(props) {
     return (
-        <h1>Hello World</h1>
+        <div>
+            <h1>Hello World { props.name }</h1>
+            <h3>{ props.children }</h3>
+        </div>
     )
 }
 
