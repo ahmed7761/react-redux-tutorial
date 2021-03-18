@@ -14,6 +14,7 @@ import MyStyle from "./components/MyStyle";
 import "./components/myStyle.css"
 import style from "./components/style.module.css"
 import Form from "./components/Form";
+import CompA from "./components/CompA";
 
 function App() {
 
@@ -42,6 +43,7 @@ function App() {
         <MyStyle />
         <h3 className={style.primary}>Styled Module</h3>
         <Form />
+        <CompA />
     </div>
   );
 }

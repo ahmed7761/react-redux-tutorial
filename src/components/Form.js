@@ -55,7 +55,7 @@ class Form extends Component{
                     </div>
                     <div>
                         <label>Comment</label>
-                        <textarea value={this.state.comment} onChange={this.commentChangeHandler}></textarea>
+                        <textarea value={this.state.comment} onChange={this.commentChangeHandler} />
                     </div>
                     <div>
                         <select value={this.state.color} onChange={this.colorChangeHandler}>
