@@ -7,6 +7,8 @@ import Parent from "./components/Parent";
 import Condition from "./components/Condition";
 import ConditionTwo from "./components/ConditionTwo";
 import ConditionThree from "./components/ConditionThree";
+import List from "./components/List";
+import StudentList from "./components/StudentList";
 
 function App() {
   return (
@@ -20,6 +22,9 @@ function App() {
         <Condition />
         <ConditionTwo />
         <ConditionThree />
+        <List />
+        <h1>Student List</h1>
+        <StudentList />
     </div>
   );
 }
