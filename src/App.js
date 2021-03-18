@@ -10,7 +10,18 @@ import ConditionThree from "./components/ConditionThree";
 import List from "./components/List";
 import StudentList from "./components/StudentList";
 
+import MyStyle from "./components/MyStyle";
+import "./components/myStyle.css"
+import style from "./components/style.module.css"
+
 function App() {
+
+    let success = true
+    let styled = {
+        color: 'red',
+        fontSize: 'font-size: 40px'
+    }
+
   return (
     <div className="App">
         <Hello name="Sharif"/>
@@ -25,6 +36,10 @@ function App() {
         <List />
         <h1>Student List</h1>
         <StudentList />
+        <h2 className={ success ? 'success font-md' : ''}>Hello Styled User</h2>
+        <h2 style={styled}>Hello Inline Styled User</h2>
+        <MyStyle />
+        <h3 className={style.primary}>Styled Module</h3>
     </div>
   );
 }
