@@ -15,6 +15,8 @@ import "./components/myStyle.css"
 import style from "./components/style.module.css"
 import Form from "./components/Form";
 import CompA from "./components/CompA";
+import Update from "./components/Update";
+import UnmountA from "./components/UnmountA";
 
 function App() {
 
@@ -44,6 +46,8 @@ function App() {
         <h3 className={style.primary}>Styled Module</h3>
         <Form />
         <CompA />
+        <Update />
+        <UnmountA />
     </div>
   );
 }
