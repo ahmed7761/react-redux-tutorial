@@ -13,6 +13,7 @@ import StudentList from "./components/StudentList";
 import MyStyle from "./components/MyStyle";
 import "./components/myStyle.css"
 import style from "./components/style.module.css"
+import Form from "./components/Form";
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
         <h2 style={styled}>Hello Inline Styled User</h2>
         <MyStyle />
         <h3 className={style.primary}>Styled Module</h3>
+        <Form />
     </div>
   );
 }
