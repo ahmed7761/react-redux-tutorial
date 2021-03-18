@@ -17,6 +17,9 @@ import Form from "./components/Form";
 import CompA from "./components/CompA";
 import Update from "./components/Update";
 import UnmountA from "./components/UnmountA";
+import Car from "./components/Car";
+import Error from "./components/Error";
+
 
 function App() {
 
@@ -48,6 +51,16 @@ function App() {
         <CompA />
         <Update />
         <UnmountA />
+        <Error>
+            <Car car="Bugati" />
+        </Error>
+        <Error>
+            <Car car="Honda" />
+        </Error>
+        {/*<Error>*/}
+        {/*    <Car car="Symphony" />*/}
+        {/*</Error>*/}
+
     </div>
   );
 }
