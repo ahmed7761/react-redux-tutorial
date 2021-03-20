@@ -28,6 +28,9 @@ import ForwardRefA from "./components/ForwardRefA";
 import PortalsDemo from "./components/PortalsDemo";
 import ClickCounter from "./components/ClickCounter";
 import HoverCounter from "./components/HoverCounter";
+import User from "./components/User";
+import UserTwo from "./components/UserTwo";
+import ClickCounterTwo from "./components/ClickCounterTwo";
 
 
 function App() {
@@ -83,6 +86,9 @@ function App() {
         <h1>Higher Order Component</h1>
         <ClickCounter name="Sharif" />
         <HoverCounter name="Ahmed" />
+        <h1>Render Props</h1>
+        <User render={(isUser, value) => isUser ?  "Welcome Sharif": `Value is ${value}`}/>
+        <UserTwo  render={(count, increment) => ( <ClickCounterTwo count={count} increment={increment} /> ) } />
 
     </div>
   );
