@@ -23,6 +23,7 @@ import FragmentTest from "./components/FragmentTest";
 import Table from "./components/Table";
 import PureComp from "./components/PureComp";
 import MemoA from "./components/MemoA";
+import RefDemo from "./components/RefDemo";
 
 
 function App() {
@@ -71,6 +72,8 @@ function App() {
 
         <PureComp />
         <MemoA />
+        <h1>Ref</h1>
+        <RefDemo />
 
     </div>
   );
