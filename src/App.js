@@ -26,6 +26,8 @@ import MemoA from "./components/MemoA";
 import RefDemo from "./components/RefDemo";
 import ForwardRefA from "./components/ForwardRefA";
 import PortalsDemo from "./components/PortalsDemo";
+import ClickCounter from "./components/ClickCounter";
+import HoverCounter from "./components/HoverCounter";
 
 
 function App() {
@@ -78,6 +80,9 @@ function App() {
         <RefDemo />
         <ForwardRefA />
         <PortalsDemo />
+        <h1>Higher Order Component</h1>
+        <ClickCounter name="Sharif" />
+        <HoverCounter name="Ahmed" />
 
     </div>
   );
