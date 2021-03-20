@@ -19,6 +19,8 @@ import Update from "./components/Update";
 import UnmountA from "./components/UnmountA";
 import Car from "./components/Car";
 import Error from "./components/Error";
+import FragmentTest from "./components/FragmentTest";
+import Table from "./components/Table";
 
 
 function App() {
@@ -60,6 +62,10 @@ function App() {
         {/*<Error>*/}
         {/*    <Car car="Symphony" />*/}
         {/*</Error>*/}
+
+        <h1>Fragment</h1>
+        <FragmentTest />
+        <Table />
 
     </div>
   );
