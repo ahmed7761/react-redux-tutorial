@@ -24,6 +24,7 @@ import Table from "./components/Table";
 import PureComp from "./components/PureComp";
 import MemoA from "./components/MemoA";
 import RefDemo from "./components/RefDemo";
+import ForwardRefA from "./components/ForwardRefA";
 
 
 function App() {
@@ -74,6 +75,7 @@ function App() {
         <MemoA />
         <h1>Ref</h1>
         <RefDemo />
+        <ForwardRefA />
 
     </div>
   );
