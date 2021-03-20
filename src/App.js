@@ -22,6 +22,7 @@ import Error from "./components/Error";
 import FragmentTest from "./components/FragmentTest";
 import Table from "./components/Table";
 import PureComp from "./components/PureComp";
+import MemoA from "./components/MemoA";
 
 
 function App() {
@@ -69,6 +70,7 @@ function App() {
         <Table />
 
         <PureComp />
+        <MemoA />
 
     </div>
   );
