@@ -21,6 +21,7 @@ import Car from "./components/Car";
 import Error from "./components/Error";
 import FragmentTest from "./components/FragmentTest";
 import Table from "./components/Table";
+import PureComp from "./components/PureComp";
 
 
 function App() {
@@ -66,6 +67,8 @@ function App() {
         <h1>Fragment</h1>
         <FragmentTest />
         <Table />
+
+        <PureComp />
 
     </div>
   );
