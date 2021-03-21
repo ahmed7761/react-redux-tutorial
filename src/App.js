@@ -33,6 +33,7 @@ import UserTwo from "./components/UserTwo";
 import ClickCounterTwo from "./components/ClickCounterTwo";
 import CompOne from "./components/CompOne";
 import { UserProvider } from "./components/UserContext";
+import Posts from "./components/Posts";
 
 
 function App() {
@@ -96,6 +97,8 @@ function App() {
     <UserProvider value="Sharif">
           <CompOne  />
     </UserProvider>
+        <h1>Http request</h1>
+        <Posts />
     </div>
   );
 }
