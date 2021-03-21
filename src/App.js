@@ -31,6 +31,8 @@ import HoverCounter from "./components/HoverCounter";
 import User from "./components/User";
 import UserTwo from "./components/UserTwo";
 import ClickCounterTwo from "./components/ClickCounterTwo";
+import CompOne from "./components/CompOne";
+import { UserProvider } from "./components/UserContext";
 
 
 function App() {
@@ -89,6 +91,8 @@ function App() {
         <h1>Render Props</h1>
         <User render={(isUser, value) => isUser ?  "Welcome Sharif": `Value is ${value}`}/>
         <UserTwo  render={(count, increment) => ( <ClickCounterTwo count={count} increment={increment} /> ) } />
+        <h1>Context</h1>
+        <CompOne name="Sharif" />
 
     </div>
   );
