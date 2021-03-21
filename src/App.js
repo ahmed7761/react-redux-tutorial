@@ -92,8 +92,10 @@ function App() {
         <User render={(isUser, value) => isUser ?  "Welcome Sharif": `Value is ${value}`}/>
         <UserTwo  render={(count, increment) => ( <ClickCounterTwo count={count} increment={increment} /> ) } />
         <h1>Context</h1>
-        <CompOne name="Sharif" />
 
+    <UserProvider value="Sharif">
+          <CompOne  />
+    </UserProvider>
     </div>
   );
 }
