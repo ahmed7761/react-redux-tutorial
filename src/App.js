@@ -36,6 +36,7 @@ import { UserProvider } from "./components/UserContext";
 import Posts from "./components/Posts";
 import HookCounter from "./components/HookCounter";
 import HookCounterTwo from "./components/HookCounterTwo";
+import UseStateWithObject from "./components/UseStateWithObject";
 
 
 function App() {
@@ -100,11 +101,12 @@ function App() {
           <CompOne  />
     </UserProvider>
         <h1>Http request</h1>
-        <Posts />
+        {/*<Posts />*/}
 
         <h1>Hook</h1>
         <HookCounter />
         <HookCounterTwo />
+        <UseStateWithObject />
     </div>
   );
 }
