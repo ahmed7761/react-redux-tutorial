@@ -35,6 +35,7 @@ import CompOne from "./components/CompOne";
 import { UserProvider } from "./components/UserContext";
 import Posts from "./components/Posts";
 import HookCounter from "./components/HookCounter";
+import HookCounterTwo from "./components/HookCounterTwo";
 
 
 function App() {
@@ -103,6 +104,7 @@ function App() {
 
         <h1>Hook</h1>
         <HookCounter />
+        <HookCounterTwo />
     </div>
   );
 }
