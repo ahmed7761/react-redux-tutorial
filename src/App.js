@@ -39,6 +39,7 @@ import HookCounterTwo from "./components/HookCounterTwo";
 import UseStateWithObject from "./components/UseStateWithObject";
 import UseStateWithArray from "./components/UseStateWithArray";
 import HookCounterThree from "./components/HookCounterThree";
+import MouseMove from "./components/MouseMove";
 
 
 function App() {
@@ -111,6 +112,7 @@ function App() {
         <UseStateWithObject />
         <UseStateWithArray />
         <HookCounterThree />
+        <MouseMove />
     </div>
   );
 }
