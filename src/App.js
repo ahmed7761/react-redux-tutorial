@@ -42,6 +42,11 @@ import HookCounterThree from "./components/HookCounterThree";
 import MouseMove from "./components/MouseMove";
 import MouseContainer from "./components/MouseContainer.js";
 import FetchData from "./components/FetchData";
+import ComponentA from "./components/ComponentA";
+
+import React from 'react'
+export const UserContext = React.createContext()
+export const ProfileContext = React.createContext()
 
 
 function App() {
@@ -116,7 +121,13 @@ function App() {
         <HookCounterThree />
         {/*<MouseMove />*/}
         <MouseContainer />
-        <FetchData />
+        {/*<FetchData />*/}
+        <UserContext.Provider value={"Sharif"}>
+            <ProfileContext.Provider value={"Developer"}>
+                <ComponentA />
+            </ProfileContext.Provider>
+        </UserContext.Provider>
+
     </div>
   );
 }
