@@ -47,6 +47,7 @@ import ComponentA from "./components/ComponentA";
 import React from 'react'
 import ParentComponent from "./components/ParentComponent";
 import MemoCounter from "./components/MemoCounter";
+import Input from "./components/Input";
 export const UserContext = React.createContext()
 export const ProfileContext = React.createContext()
 
@@ -131,6 +132,7 @@ function App() {
         </UserContext.Provider>
         <ParentComponent />
         <MemoCounter />
+        <Input />
     </div>
   );
 }
