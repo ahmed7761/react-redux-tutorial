@@ -4,7 +4,7 @@ const UseStateWithObject = () => {
 
     const [info, setInfo] = useState({
         name: '',
-        id: null
+        id: ''
     })
 
     return (

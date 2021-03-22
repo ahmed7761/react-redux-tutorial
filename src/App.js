@@ -37,6 +37,7 @@ import Posts from "./components/Posts";
 import HookCounter from "./components/HookCounter";
 import HookCounterTwo from "./components/HookCounterTwo";
 import UseStateWithObject from "./components/UseStateWithObject";
+import UseStateWithArray from "./components/UseStateWithArray";
 
 
 function App() {
@@ -107,6 +108,7 @@ function App() {
         <HookCounter />
         <HookCounterTwo />
         <UseStateWithObject />
+        <UseStateWithArray />
     </div>
   );
 }
