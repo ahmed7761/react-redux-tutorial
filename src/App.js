@@ -40,6 +40,7 @@ import UseStateWithObject from "./components/UseStateWithObject";
 import UseStateWithArray from "./components/UseStateWithArray";
 import HookCounterThree from "./components/HookCounterThree";
 import MouseMove from "./components/MouseMove";
+import MouseContainer from "./components/MouseContainer.js";
 
 
 function App() {
@@ -112,7 +113,8 @@ function App() {
         <UseStateWithObject />
         <UseStateWithArray />
         <HookCounterThree />
-        <MouseMove />
+        {/*<MouseMove />*/}
+        <MouseContainer />
     </div>
   );
 }

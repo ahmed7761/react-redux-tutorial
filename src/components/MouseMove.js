@@ -13,6 +13,10 @@ const MouseMove = () => {
     useEffect(() => {
         console.log('Use effect move')
         window.addEventListener('mousemove', LogMouseMove)
+        return () => {
+            console.log('component removed')
+            window.removeEventListener('mousemove', LogMouseMove)
+        }
     },[])
 
     return (
