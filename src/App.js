@@ -45,6 +45,7 @@ import FetchData from "./components/FetchData";
 import ComponentA from "./components/ComponentA";
 
 import React from 'react'
+import ParentComponent from "./components/ParentComponent";
 export const UserContext = React.createContext()
 export const ProfileContext = React.createContext()
 
@@ -127,7 +128,7 @@ function App() {
                 <ComponentA />
             </ProfileContext.Provider>
         </UserContext.Provider>
-
+        <ParentComponent />
     </div>
   );
 }
