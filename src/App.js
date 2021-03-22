@@ -48,6 +48,8 @@ import React from 'react'
 import ParentComponent from "./components/ParentComponent";
 import MemoCounter from "./components/MemoCounter";
 import Input from "./components/Input";
+import ClassTimer from "./components/ClassTimer";
+import HookTimer from "./components/HookTimer";
 export const UserContext = React.createContext()
 export const ProfileContext = React.createContext()
 
@@ -133,6 +135,8 @@ function App() {
         <ParentComponent />
         <MemoCounter />
         <Input />
+        <ClassTimer />
+        <HookTimer />
     </div>
   );
 }
