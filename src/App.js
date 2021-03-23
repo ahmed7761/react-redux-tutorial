@@ -51,6 +51,7 @@ import Input from "./components/Input";
 import ClassTimer from "./components/ClassTimer";
 import HookTimer from "./components/HookTimer";
 import ReducerCounter from "./components/ReducerCounter";
+import ReducerCounterTwo from "./components/ReducerCounterTwo";
 export const UserContext = React.createContext()
 export const ProfileContext = React.createContext()
 
@@ -139,6 +140,7 @@ function App() {
         <ClassTimer />
         <HookTimer />
         <ReducerCounter />
+        <ReducerCounterTwo />
     </div>
   );
 }
