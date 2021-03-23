@@ -44,7 +44,7 @@ import MouseContainer from "./components/MouseContainer.js";
 import FetchData from "./components/FetchData";
 import ComponentA from "./components/ComponentA";
 
-import React from 'react'
+import React, {useReducer} from 'react'
 import ParentComponent from "./components/ParentComponent";
 import MemoCounter from "./components/MemoCounter";
 import Input from "./components/Input";
@@ -53,8 +53,30 @@ import HookTimer from "./components/HookTimer";
 import ReducerCounter from "./components/ReducerCounter";
 import ReducerCounterTwo from "./components/ReducerCounterTwo";
 import MultipleReducerCounter from "./components/MultipleReducerCounter";
+import ContextB from "./components/ContextB";
+import ContextA from "./components/ContextA";
 export const UserContext = React.createContext()
 export const ProfileContext = React.createContext()
+
+
+const initialState = 0
+const reducer = (state, action) => {
+    switch (action) {
+        case 'increment':
+            return state + 1
+
+        case 'decrement':
+            return state - 1
+
+        case 'reset':
+            return initialState
+
+        default:
+            return state
+    }
+}
+
+export const CountContext = React.createContext()
 
 
 function App() {
@@ -64,6 +86,8 @@ function App() {
         color: 'red',
         fontSize: 'font-size: 40px'
     }
+
+    const [ count, dispatch ]  = useReducer(reducer, initialState)
 
   return (
     <div className="App">
@@ -143,6 +167,12 @@ function App() {
         <ReducerCounter />
         <ReducerCounterTwo />
         <MultipleReducerCounter />
+        <h3>Use Reducer with context</h3>
+        <CountContext.Provider value={{countValue: count, countDispatch: dispatch} }>
+            <ContextA />
+            <ContextB />
+        </CountContext.Provider>
+
     </div>
   );
 }
