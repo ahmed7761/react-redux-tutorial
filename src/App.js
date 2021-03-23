@@ -55,6 +55,8 @@ import ReducerCounterTwo from "./components/ReducerCounterTwo";
 import MultipleReducerCounter from "./components/MultipleReducerCounter";
 import ContextB from "./components/ContextB";
 import ContextA from "./components/ContextA";
+import CustomHookA from "./components/CustomHookA";
+import CustomHookB from "./components/CustomHookB";
 export const UserContext = React.createContext()
 export const ProfileContext = React.createContext()
 
@@ -172,7 +174,9 @@ function App() {
             <ContextA />
             <ContextB />
         </CountContext.Provider>
-
+        <h1>Custom Hook</h1>
+        <CustomHookA/>
+        <CustomHookB />
     </div>
   );
 }
