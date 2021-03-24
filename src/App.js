@@ -57,8 +57,17 @@ import ContextB from "./components/ContextB";
 import ContextA from "./components/ContextA";
 import CustomHookA from "./components/CustomHookA";
 import CustomHookB from "./components/CustomHookB";
+import Navbar from "./components/router/Navbar";
+
+import {BrowserRouter, Switch, Route} from 'react-router-dom'
+import About from "./components/router/About";
+import Home from "./components/router/Home";
+import RouterPosts from "./components/router/RouterPosts";
+import SinglePost from "./components/router/SinglePost";
+
 export const UserContext = React.createContext()
 export const ProfileContext = React.createContext()
+
 
 
 const initialState = 0
@@ -177,6 +186,18 @@ function App() {
         <h1>Custom Hook</h1>
         <CustomHookA/>
         <CustomHookB />
+        <h1>React Router Dom</h1>
+        <h1>-----------------</h1>
+
+        <BrowserRouter>
+            <Navbar />
+            <Switch>
+                <Route exact path='/' component={Home} />
+                <Route exact path='/about' component={About} />
+                <Route exact path='/posts' component={RouterPosts} />
+                <Route exact path='/posts/:id' component={SinglePost} />
+            </Switch>
+        </BrowserRouter>
     </div>
   );
 }
