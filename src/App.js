@@ -64,6 +64,7 @@ import About from "./components/router/About";
 import Home from "./components/router/Home";
 import RouterPosts from "./components/router/RouterPosts";
 import SinglePost from "./components/router/SinglePost";
+import CounterRedux from "./components/redux/CounterRedux";
 
 export const UserContext = React.createContext()
 export const ProfileContext = React.createContext()
@@ -198,6 +199,11 @@ function App() {
                 <Route exact path='/posts/:id' component={SinglePost} />
             </Switch>
         </BrowserRouter>
+        <h1>-------------------</h1>
+        <h1>Redux Part</h1>
+        <h1>---------------------</h1>
+        <CounterRedux />
+        <h1>---------------------</h1>
     </div>
   );
 }
