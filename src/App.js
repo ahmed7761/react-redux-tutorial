@@ -65,6 +65,7 @@ import Home from "./components/router/Home";
 import RouterPosts from "./components/router/RouterPosts";
 import SinglePost from "./components/router/SinglePost";
 import CounterRedux from "./components/redux/CounterRedux";
+import People from "./components/redux/People";
 
 export const UserContext = React.createContext()
 export const ProfileContext = React.createContext()
@@ -204,6 +205,8 @@ function App() {
         <h1>---------------------</h1>
         <CounterRedux />
         <h1>---------------------</h1>
+        <h2>Synchronous & Asynchronous</h2>
+        <People />
     </div>
   );
 }
