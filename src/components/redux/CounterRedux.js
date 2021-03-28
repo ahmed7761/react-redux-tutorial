@@ -1,13 +1,20 @@
 import React from 'react';
+import {connect} from "react-redux";
 
-const CounterRedux = () => {
+import { increment, decrement } from '../services/actions/counterAction'
+
+const CounterRedux = ({ increment, decrement, count }) => {
     return (
         <div>
-            <h3>Count: 0</h3>
-            <button>Increment</button>
-            <button>Decrement</button>
+            <h3>Count: {count}</h3>
+            <button onClick={() => increment(5)}>Increment</button>
+            <button onClick={() => decrement(1)}>Decrement</button>
         </div>
     );
 };
 
-export default CounterRedux;
+const mapStateToProps = (state) => ({
+    count: state.counterReducer.count
+})
+
+export default connect(mapStateToProps, {increment, decrement})(CounterRedux);

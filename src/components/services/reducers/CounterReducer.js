@@ -1,7 +1,7 @@
 import { increment_value, decrement_value } from '../types'
 
 const initialState = {
-    count: 0
+    count: 5
 }
 
 export default function (state = initialState, action) {
@@ -9,12 +9,12 @@ export default function (state = initialState, action) {
         case increment_value:
             return{
                 ...state,
-                count: state.count + 1
+                count: state.count + action.payload
             }
         case decrement_value:
             return{
                 ...state,
-                count: state.count - 1
+                count: state.count - action.payload
             }
 
         default:
